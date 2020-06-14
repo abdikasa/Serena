@@ -1,0 +1,359 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: AVG;
+    src: url(../fonts/AVG.ttf);
+}
+
+.so-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    animation: fade-in 1.5s ease, slide-in 1.2s ease;
+    -webkit-animation: fade-in 1.5s ease, slide-in 1.2s ease;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}
+
+.text-gold {
+    color: #D2AE90 !important;
+}
+
+section {
+    flex: 1;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+#so-head, #so-footer {
+    font-size: 80%;
+    padding: 12px 0;
+    box-shadow: 0 4px 10px -6px rgb(102, 102, 102);
+}
+
+.radio-group {
+    margin-left: -0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+label {
+    display: inline-flex;
+}
+
+input[type='radio'] {
+    margin: 0 0.5rem 0;
+}
+
+#so-head h1 {
+    font-size: 270%;
+    /* font-family: AVG; */
+}
+
+#so-head ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 12px;
+    list-style: none outside none;
+    text-align: right;
+}
+
+#so-head li {
+    font-size: 120%;
+    display: inline;
+    font-weight: 500;
+}
+
+#so-head li>* {
+    padding: 0 5px;
+}
+
+#so-head span {
+    font-weight: bold;
+}
+
+#so-head h1 a {
+    text-decoration: none;
+    color: #000;
+    transition: animation 0.4s, color 0.3s;
+}
+
+#so-head h1:hover {
+    animation: logoHover 0.4s;
+}
+
+#so-head h1 a:hover {
+    color: #D2AE90;
+}
+
+@keyframes logoHover {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(1px);
+    }
+    40% {
+        transform: translateY(2px);
+    }
+    60% {
+        transform: translateY(-1px);
+    }
+    80% {
+        transform: translateY(-1px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#so-details {
+    min-height: 100px;
+    margin-top: 40px;
+}
+
+#so-details h1 {
+    font-size: 300%;
+    /* font-family: AVG; */
+    padding-bottom: 10px;
+    margin-left: -3px;
+}
+
+#so-details h6 {
+    color: #D2AE90;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+#so-details p {
+    color: #999;
+    color: #403F47;
+    font-weight: 500;
+}
+
+#so-register {
+    min-height: 400px;
+    margin-top: 15px;
+}
+
+#so-register .img-left {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.form-group p input {
+    width: 400px;
+    width: 100%;
+    z-index: 1;
+    outline: 0;
+    border: 0;
+}
+
+.form-control {
+    padding-left: 0;
+}
+
+.form-group p {
+    margin-bottom: 0;
+}
+
+.form-group {
+    /* border-bottom: 1px solid #000; */
+    position: relative;
+    margin-bottom: 2.348rem;
+    border-bottom: thin solid #000;
+}
+
+.magic-placeholder {
+    position: absolute;
+    top: 5px;
+    z-index: -999;
+}
+
+.magic-placeholder.show_hide {
+    /* top: -6px; */
+}
+
+.form-group .show_icon {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.magic-placeholder:first-child {
+    line-height: 1.5;
+    color: #999;
+}
+
+.magic-placeholder p {
+    transition: all 0.25s ease-in-out;
+}
+
+.show_hide .error-message {
+    /* margin-top:53px; */
+}
+
+.tester {
+    transform: translateY(-18px);
+    font-size: 13px;
+    width: 500px;
+}
+
+.tester-2 {
+    width: 120px;
+    height: 0;
+    z-index: 1;
+}
+
+.img-left {
+    max-width: 47%;
+    /* max-width:40%; */
+    padding: 0;
+    /* background: url("https://www.perola-negra.com/blog/wp-content/uploads/2016/07/Captura-de-ecra%CC%83-2016-07-26-a%CC%80s-12.23.00.png"); */
+    /* background: url("https://besthqwallpapers.com/img/original/38480/ruby-rose-actress-black-and-white-portrait-australian-fashion-model-black-hat.jpg"); */
+    /* background: url("https://images.fashionmodeldirectory.com/model/000000625292-mika_schneider-squaremedium.jpg"); */
+    background-position: bottom center;
+    background-size: cover;
+    /* height: 56vh; */
+    height: auto;
+    background-image: url("../../imgs/sign.up2.jpg");
+}
+
+#so-footer {
+    box-shadow: 0px -2px 5px rgb(136, 135, 135);
+    box-shadow: 0 -5px 5px -5px rgb(102, 102, 102);
+    min-height: 80px;
+    margin-top: 1.5rem;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 5px;
+    /*Test*/
+}
+
+#so-footer h6 {
+    line-height: 17px;
+    word-spacing: 1.3px;
+    color: rgb(87, 85, 85);
+    width: 82%;
+    float: left;
+    font-family: AVG;
+    font-size: 10.5px;
+    padding: 0;
+    margin-top: -1%;
+}
+
+#so-footer button {
+    width: 15%;
+    float: right;
+    padding: 10px 10px;
+    margin-top: -1%;
+}
+
+.date-picker {
+    margin-bottom: 30px;
+    color: rgb(53, 53, 53);
+}
+
+.container .bear-dates, .container .bear-months, .container .bear-years {
+    border: 1px solid #000;
+}
+
+.error {
+    border-bottom: thin solid #c40000;
+}
+
+.error-message {
+    padding-top: 15.5px;
+}
+
+.error-message, .err-active {
+    color: #c40000;
+    font-size: 11.5px;
+    width: 600px;
+}
+
+.not-required {
+    margin-top: 2.6rem;
+}
+
+.err-active {
+    text-decoration: underline;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.button {
+    background-color: #000;
+    border-color: #000;
+}
+
+.button:hover, .button:active {
+    background-color: #403F47;
+    border-color: #403F47;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        top: -300px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        left: -300px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        right: -300px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+.img-left {
+    position: relative;
+    animation: fade-in 1.4s ease, slide-left 1.2s ease;
+    -webkit-animation: fade-in 1.4s ease, slide-left 1.2s ease;
+    -webkit-backface-visibility: hidden;
+}
+
+.form-right {
+    position: relative;
+    animation: fade-in 1.4s ease, slide-right 1.2s ease;
+    -webkit-animation: fade-in 1.4s ease, slide-right 1.2s ease;
+    -webkit-backface-visibility: hidden;
+}
+
+#company_name {
+    text-transform: uppercase;
+}

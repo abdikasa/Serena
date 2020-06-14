@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: linear-gradient(#FF988D 50%, #E2F2D5 50%) no-repeat;
+    background: -webkit-linear-gradient(#FF988D 50%, #E2F2D5 50%) no-repeat;
+    height: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    margin-top: -8%;
+    margin-bottom: 20px;
+}
+
+.flexAllZero {
+    display: flex;
+    /* top: 0; */
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+#center {
+    margin: auto;
+}
+
+.box {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 12px;
+    background-color: #fff;
+    min-width: 200px;
+    max-width: 630px;
+    height: auto;
+    padding: 65px 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#highlight-h2, .box h2 {
+    font-size: 210%;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+#highlight-h2 {
+    font-size: 140%;
+    font-weight: 700;
+}
+
+
+.box p {
+    font-size: 120%;
+    color: rgba(0, 0, 0, 0.80);
+    line-height: 1.4;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+span a:link, span a:visited {
+    color: #1665D8;
+}
+
+span a:hover, span a:active {
+    color: #5593ee;
+}
+
+#jump_login {
+    margin-top: 40px;
+}
+
+#jump_login a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    margin-left: 2%;
+}
+
+#jump_login a:hover, #jump_login a:active {
+    color: #DFB28B;
+}
+
+#jump_login i {
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: -2%;
+}
+
+.nav-white {
+    padding-top: 20px;
+    font-size: 120%;
+    font-family: 'Playfair Display', serif;
+    /* font-family:AVG; */
+}
+
+.nav-white h1 a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 100;
+    font-style: italic;
+}
+
+h1 a:hover, h1 a:active {
+    color: #E2F2D5;
+}
+
+@keyframes logoHover {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(1px);
+    }
+    40% {
+        transform: translateY(2px);
+    }
+    60% {
+        transform: translateY(-1px);
+    }
+    80% {
+        transform: translateY(-1px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+h1 a {
+    text-decoration: none;
+    transition: animation 0.4s, color 0.3s;
+}
+
+.logoHover:hover {
+    animation: logoHover 0.4s;
+}
+
+#text-cym {
+    width:80%;
+    margin: 0 auto;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-in {
+     0% {
+      top: -300px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  

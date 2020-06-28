@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Cirka-Bold;
+    src: url('../frontend/fonts/Cirka-Bold.otf')
+}
+
+@font-face {
+    font-family: Cirka-Light;
+    src: url('../frontend/fonts/Cirka-Light.otf')
+}
+
+@font-face {
+    font-family: Cirka-Variable;
+    src: url('../frontend/fonts/Cirka-Variable.ttf')
+}
+
+html, body, .main-container {
+    height: 100%;
+}
+
+body {
+    max-width:1920px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    background-color: #fff;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    background-color: #000;
+    padding: 0 4.5rem 0 4.5rem; 
+}
+
+a {
+    color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+header {
+    display: grid;
+    column-gap: 40px;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding:2.9rem 0 0;
+    height: 100%;
+    /* background: url("https://www.balmain.com/assets/2019-02/Modulefire.jpg"); */
+    /* background: url("https://srv2.imgonline.com.ua/result_img/imgonline-com-ua-resize-px09DFU6Zh.jpg"); */
+    background: url("../imgs/nav3.jpg");
+    /* background: url("https://www.coffeeand.tv/wp-content/uploads/2019/02/EDIT_FIRE_007_g_16x9_V2_007.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    grid-template-rows: 3rem 9rem;
+    row-gap:17rem;
+}
+
+header h2 {
+    font-size:1.7rem;
+    letter-spacing: 3px;
+    line-height:1.5;
+    margin-left:0.3rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    margin-top:-1rem;
+    margin-left:4.4rem;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.logo span {
+    font-size: 70%;
+    font-size: 90%;
+    font-weight: 700;
+}
+
+.heading #test {
+    font-family: Cirka-Bold;
+    font-size:300%;
+    padding-bottom: 0.7rem;
+}
+
+.heading {
+    text-transform: uppercase;
+    grid-column: 1/4;
+    justify-self: center;
+    text-align: center;
+    margin-left:4rem;
+}
+
+.heading span {
+    font-weight:600;
+}

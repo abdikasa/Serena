@@ -53,7 +53,7 @@ try {
     $mail->Subject = $email_details["subject"];
     $mail->Body = $email_details["body"];
     $mail->send();
-    echo 'Message has been sent';
+    // echo 'Message has been sent';
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     $mail->SMTPDebug = 4;

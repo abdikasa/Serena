@@ -36,8 +36,9 @@ if (!$does_email_exist || !$is_token_valid) {
                 1,
                 "users"
             );
-        echo 'Welcome to the club mate!';
-    }else{
-        die("You are already veriffied");
+            header("Location: pages/verified.php");
+        }else{
+        //die("You are already verified");
+        header("Location: pages/av.php");
     }
 }

@@ -1,5 +1,6 @@
 # Serena
-Fashion and Luxury Goods Website | Vanilla PHP, SQL, HTML, CSS, JS
+Fashion and Luxury Goods Website | Vanilla PHP, SQL, HTML, CSS, JS/
+Please Click the images below to get an accurate representation of the actual layout  of the site, github has bolded some lines and some not.
 
 # Sign Up Screen
 ![github-small](imgs/sign_up_screen.png)

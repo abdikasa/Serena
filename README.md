@@ -2,8 +2,7 @@
 Fashion and Luxury Goods Website | Vanilla PHP, SQL, HTML, CSS, JS
 
 # Sign Up Screen
-Reinforcing API concepts and web development concepts + PokeAPI + Bootstrap + Responsive
-![github-large](imgs/sign_up_screen.png)
+![github-small](imgs/sign_up_screen.png)
 
 # Sign Up Screen Errors With Javascript; The Constraint Validation API
 ![](imgs/sign_up_screen2.png)
